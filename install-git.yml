@@ -1,0 +1,13 @@
+---
+- name: Install Git on Jenkins agent
+  hosts: agent
+  become: True
+  gather_facts: False
+
+  tasks:
+    - name: Install Git
+      package:
+        name: Git
+        state: present 
+
+...
