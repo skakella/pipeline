@@ -6,9 +6,10 @@
 
   tasks:
     - name: Install Git
-      package:
-        name: Git
-        state: present 
+      yum:
+        name: git
+        state: present
+        update_cache: yes 
 
 
 ...
