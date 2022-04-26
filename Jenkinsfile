@@ -11,7 +11,7 @@ pipeline {
         }
         stage('install-git on remote'){
             steps{
-                sh 'ansible-playbook agent install-git.yml' 
+                sh 'ansible-playbook install-git.yml' 
             }
 
         }
