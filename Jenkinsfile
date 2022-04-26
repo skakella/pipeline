@@ -4,8 +4,7 @@ pipeline {
     stages{
         stage('Get Git repo'){
             stage{
-                steps
-                {
+                steps {                
                     git url:'https://github.com/skakella/pipeline.git',branch:'master'    
                 }
             }
