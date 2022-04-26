@@ -6,7 +6,7 @@
 
   tasks:
     - name: Install Git
-      dnf:
+      package:
         name: Git
         state: present 
 
